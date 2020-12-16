@@ -17,23 +17,23 @@
                 <h1></h1>
             </div>
             <div class="addList">
-                <input type="text" required minlength="4">
-                <button class="add">ADD</button>
+                <form @submit.prevent="addTodo">
+                    <input v-model="newTodo" type="text" required minlength="4">
+                    <button class="add" type="submit" name="add">ADD</button>
+                </form>
             </div>
             <h2>Todo List</h2>
             <!-- Da mostrare dinamicamente -->
-            <div class="list">
-                <span>Cosa da fare</span>
-                <i class="fas fa-times"></i>
+        <div v-if="arrTodo.length != 0">
+           <div class="list" v-for="(todo,index) in arrTodo">
+                <p>{{todo}}</p>
+                <i class="fas fa-times" @click="remove(index)"></i>
             </div>
-            <div class="list">
-                <span>Cosa da fare</span>
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="list">
-                <span>Cosa da fare</span>
-                <i class="fas fa-times"></i>
-            </div>
+        </div> 
+        <div v-if="arrTodo.length === 0">
+            <p class="nulla">Nothing to do</p>
+        </div>
+
         </div>
     </div>
     <!-- VueJS -->
