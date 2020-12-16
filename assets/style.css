@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.2);
+}
+.card {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2)
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+img {
+    margin: 20px 0;
+    width: 50%;
+}
+.addList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 80%;
+}
+button {
+    background-color: #001533;
+    color: white;
+    padding: 0.5rem;
+    margin-left: 2px;
+    border-radius: 5px;
+    width: 15%;
+}
+h2 {
+    margin: 0 0 30px 10px;
+    font-weight: 800;
+}
+.list {
+    width: 95%;
+    margin: 0 0 5px 10px;
+    background-color: #001533;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.list i {
+    color: green;
+}
